@@ -1,0 +1,174 @@
+/* -------------------------------------------------------------------------------- */
+/*  =Imports
+/* -------------------------------------------------------------------------------- */
+
+@import 'normalize', 'mixins';
+
+
+/* -------------------------------------------------------------------------------- */
+/*  =Variables
+/* -------------------------------------------------------------------------------- */
+
+$col-brand: #8dc63f;
+
+// Breakpoints
+$bp-small: em(768);
+$bp-medium: em(992);
+$bp-large: em(1366);
+
+
+/* -------------------------------------------------------------------------------- */
+/*  =Typography
+/* -------------------------------------------------------------------------------- */
+
+body, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.2;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*  =General
+/* -------------------------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+p,ul,ol,dl {
+  margin-top: 0;
+}
+a {
+  color: #05659c;
+  text-decoration: none;
+  transition: color 0.15s ease-out;
+  will-change: color;
+
+  &:visited {
+    // color: #05659c;
+  }
+  &:hover, &:active {
+    outline: 0;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  @extend %cf;
+  width: 90%;
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+
+  @include bp-small {
+    width: em(740);
+  }
+  @include bp-medium {
+    width: em(960);
+  }
+
+  @include bp-large {
+    width: em(1255);
+  }
+}
+
+
+/* Media block --------------------------------------- */
+
+.media {}
+.media, .media-bd {overflow:hidden; _overflow:visible; zoom:1;}
+.media-img {float:left; margin-right: 10px;}
+.media-img img {display:block;}
+.media-img-right {float:right; margin-left: 10px;}
+
+
+/* Buttons --------------------------------------- */
+
+a.btn,
+input.btn,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+  border-radius: em(3,12);
+  border: 0;
+  background: $col-brand;
+  color: #fff;
+  display: inline-block;
+  font-size: em(12);
+  padding: em(6,12) em(10,12) em(5,12);
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  line-height: 1.5;
+  -webkit-appearance: none;
+  transition: background-color 0.15s ease-out;
+}
+a.btn:hover,
+input.btn:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  color: #fff;
+  background: #373737;
+  cursor: pointer;
+}
+
+a.btn--block,
+input.btn--block {
+  display: block;
+  width: 100%;
+}
+
+// sizes
+a.btn--md {
+  font-size: em(15);
+}
+a.btn--lg {
+  font-size: em(18);
+}
+a.btn--xl {
+  font-size: em(24);
+}
+a.btn--sm {
+  font-size: em(10);
+}
+
+.btn--uc {
+  text-transform: uppercase;
+}
+
+.btn {
+  &.btn--grey {
+    color: #444;
+    background-color: #ccc;
+  }
+  &.btn--green-dark {
+    background-color: darken($col-brand, 15%);
+  }
+  &.btn--orange {
+    background-color: #f58220;
+  }
+  &.btn--black {
+    background-color: #373737;
+    &:hover {
+      background-color: #111;
+    }
+  }
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*  =Helpers
+/* -------------------------------------------------------------------------------- */
+
+.ta-l { text-align: left; }
+.ta-r { text-align: right; }
+.fl-l { float: left; }
+.fl-r { float: right; }
