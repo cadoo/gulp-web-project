@@ -1,0 +1,47 @@
+/* http://www.modularscale.com/?15&px&1.414 */
+:root {
+  --h00: 7.493rem;
+  --h0: 5.299rem;
+  --h1: 3.748rem;
+  --h2: 2.65rem;
+  --h3: 1.874rem;
+  --h4: 1.326rem;
+  --h5: .938rem;
+  --h6: .663rem;
+}
+
+.h00 { font-size: var(--h00) }
+.h0 { font-size: var(--h0) }
+
+@media (--breakpoint-sm) {
+  .sm-h00 { font-size: var(--h00) }
+  .sm-h0 { font-size: var(--h0) }
+  .sm-h1 { font-size: var(--h1) }
+  .sm-h2 { font-size: var(--h2) }
+  .sm-h3 { font-size: var(--h3) }
+  .sm-h4 { font-size: var(--h4) }
+  .sm-h5 { font-size: var(--h5) }
+  .sm-h6 { font-size: var(--h6) }
+}
+
+@media (--breakpoint-md) {
+  .md-h00 { font-size: var(--h00) }
+  .md-h0 { font-size: var(--h0) }
+  .md-h1 { font-size: var(--h1) }
+  .md-h2 { font-size: var(--h2) }
+  .md-h3 { font-size: var(--h3) }
+  .md-h4 { font-size: var(--h4) }
+  .md-h5 { font-size: var(--h5) }
+  .md-h6 { font-size: var(--h6) }
+}
+
+@media (--breakpoint-lg) {
+  .lg-h00 { font-size: var(--h00) }
+  .lg-h0 { font-size: var(--h0) }
+  .lg-h1 { font-size: var(--h1) }
+  .lg-h2 { font-size: var(--h2) }
+  .lg-h3 { font-size: var(--h3) }
+  .lg-h4 { font-size: var(--h4) }
+  .lg-h5 { font-size: var(--h5) }
+  .lg-h6 { font-size: var(--h6) }
+}

@@ -1,0 +1,31 @@
+/* Media queries */
+@custom-media --breakpoint-xs (max-width: 44.9375em); /* 719 */
+@custom-media --breakpoint-sm (min-width: 45em); /* 720 */
+@custom-media --breakpoint-sm-md (min-width: 45em) and (max-width: 63.9375em);
+@custom-media --breakpoint-md (min-width: 64em); /* 1024 */
+@custom-media --breakpoint-md-lg (min-width: 64em) and (max-width: 80.9375em);
+@custom-media --breakpoint-lg (min-width: 80em); /* 1280 */
+
+:root {
+
+  --width-2: 45rem; /* 720 */
+  --width-3: 64rem; /* 1024 */
+  --width-4: 80rem; /* 1280 */
+
+  --main-font-family: var(--default-font-stack);
+  --heading-font-family: sans-serif;
+
+  --black: #292F36;
+  --gray: #94979A;
+  --silver: #BEC0C2;
+
+  --col-1: calc(1/12*100%);
+
+  /*
+  === Example ===
+  --mainColor: red;
+  in .css use as -> color: var(--mainColor);
+  */
+  --default-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+}
